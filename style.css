@@ -71,7 +71,7 @@ body{
 .header__second{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:stretch;
     padding: 0 2rem;
 }
 
@@ -89,6 +89,10 @@ body{
     height: 10px;
     border: 0;
     box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+
+.header__nav--icon{
+    display: none;
 }
 
 /* Contact Information */
@@ -157,7 +161,7 @@ input,textarea{
 textarea{
     height: 28rem;
     padding: 1rem 1.23rem;
-    max-width: 100%;
+    width: 100%;
 }
 
 /* About Footer*/
@@ -209,7 +213,7 @@ textarea{
 
 
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 420px){
 
     /* Header */
 
@@ -284,6 +288,11 @@ textarea{
         width: 100%;
     }
 
+    .form__flex{
+        margin-right: -3rem;
+        margin-left: -1.2rem;
+    }
+
     .section__form__span{
         display: block;
         width: 100%;
@@ -299,4 +308,28 @@ textarea{
     width: -webkit-fill-available;
     margin: 0.8rem 0;
     }
-}
+
+    .section__form--btn{width: 95%;}
+
+    /* Footer About */
+
+    .about{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    .about__realstate{
+        margin-bottom: -2rem;
+    }
+
+    .about__links--ul, .about__info--ul{
+        display: flex;
+        gap: 1rem;
+        /* justify-content: center; */
+        padding-right: 1rem;
+        flex-wrap: wrap;
+    }
+} 
