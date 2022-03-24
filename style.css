@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #8c8c8c;
+}
+
+h1, h2, p{
+    margin: 1.8rem 0;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: 1.9rem;
+
+}
+
+h3{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+p, button, input, textarea, b, li{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #8c8c8c;
+}
+ul{
+    list-style-type: none;  
+}
+img {
+    max-width:100%;
+    height:auto;
+}
+
+body{
+    font-family: "Poppins", sans-serif; 
+}
+
+/* header */
+
+.header__first{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+    /* padding-top: 0.3rem; */
+}
+
+.header__first--icon{
+    height: auto;
+    width: auto;
+    max-width: 25px;
+    max-height: 25px;
+}
+
+.header__second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.header__second__list--icons{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    /* font-size: 4rem; */
+}
+.header__second__list--icons a:hover{
+    color: rgb(11, 230, 11);
+}
+
+.hr1{
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -10px #8c8c8c inset;
+}
+
+/* Contact Information */
+
+.information{
+    text-align: center;
+    padding: 2rem 15rem;
+}
+
+.information--head{
+    color: rgb(11, 230, 11);
+}
+
+/* section */
+
+.section{
+    display: flex;
+    gap: 5rem;
+    padding: 2rem 3rem;
+}
+
+.section__address{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.section__address img{
+    height: 35px;
+    width: 35px;
+}
+.section__address__card{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Section form */
+
+.form__flex{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+.section__form__span{
+    display: flex;
+    gap: 0.8rem;
+}
+.section__form--btn{
+    background-color: rgb(80, 224, 92);
+    /* padding: 0.5rem 3rem; */
+    color: aliceblue;
+    border-style: none;
+    align-self: flex-start;
+    padding: 1rem 4.5rem;
+}
+
+input,textarea{
+    height: 3.5rem;
+    border-radius: 0%;
+    border-style: none;
+    border: 1px solid #c4c2c2;
+    padding: 0.5rem 1rem;
+}
+textarea{
+    height: 28rem;
+    padding: 1rem 1.23rem;
+    max-width: 100%;
+}
+
+/* About Footer*/
+
+.about p, .about b{
+    color: rgb(63, 61, 61)
+}
+
+.about{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.about__realstate{
+    max-width: 40rem;
+}
+
+.about__realstate p, .about__links--ul li, .about__info--ul li{
+    padding-bottom: 0.5rem;
+}
+
+.about__newsletter p{
+    padding-bottom: 1.5rem;
+}
+
+.about__newsletter--btn{
+    background-color: rgb(58, 248, 10);
+    color: aliceblue;
+    border-style: none;
+    padding: 1rem 1.5rem;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #8c8c8c;
+    padding: 0.05rem 0;
+    text-align: center;
+}
+.footer p{
+    color: white;
+}
+
+/* Mobile Version */
+
+
+
+@media only screen and (max-width: 400px){
+
+    /* Header */
+
+    .header__second{
+        flex-direction: column;
+        position: relative;
+    }
+
+    .header__second__list{
+        width: 100%;
+    }
+
+    .header__second__list--icons{
+        display: none;
+        background-color: rgb(58, 248, 10);
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+        gap: 1.5rem;
+        padding: 0.75rem 0;
+    }
+    nav li a{
+        color: white;
+    }
+
+    .header__nav--icon{
+        display: inline-block;
+        position: absolute;
+        top: 0.5rem;
+        right: 2rem;
+    }
+
+    .showmenu{
+        display: block;
+    }
+
+    /* Contact Information */
+
+    .information{
+        padding: 2.5rem 1rem;
+    }
+
+    .information--head{
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+
+    /* Section Address */
+
+    .section__address{
+        text-align: center; 
+    }
+
+    .section__address__card{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .section__address__card p{
+        margin-bottom: 2.5rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Section Form */
+
+    .section{
+        display: block;
+    }
+    .section__form{
+        /* display: none; */
+        width: 100%;
+    }
+
+    .section__form__span{
+        display: block;
+        width: 100%;
+    }
+
+    .section__form__textarea{
+        width: 100%;
+    }
+
+    textarea {max-width:95%;}
+    input {
+    max-width: 95%;
+    width: -webkit-fill-available;
+    margin: 0.8rem 0;
+    }
+}
