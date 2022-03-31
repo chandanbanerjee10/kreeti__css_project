@@ -114,6 +114,8 @@ body{
     padding: 2rem 3rem;
 }
 
+/* Section Adress */ 
+
 .section__address{
     display: flex;
     flex-direction: column;
@@ -172,7 +174,7 @@ textarea{
 
 .about{
     display: flex;
-    gap: 5rem;
+    gap: 1rem;
     justify-content: space-between;
     padding: 0 1.5rem;
     flex-wrap: wrap;
@@ -180,7 +182,7 @@ textarea{
 }
 
 .about__realstate{
-    max-width: 40rem;
+    max-width: 28rem;
 }
 
 .about__realstate p, .about__links--ul li, .about__info--ul li{
@@ -213,7 +215,7 @@ textarea{
 
 
 
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 500px){
 
     /* Header */
 
@@ -261,6 +263,11 @@ textarea{
         font-weight: 400;
     }
 
+    /* Section */
+
+    .section{
+        display: block;
+    }
 
     /* Section Address */
 
@@ -280,9 +287,6 @@ textarea{
 
     /* Section Form */
 
-    .section{
-        display: block;
-    }
     .section__form{
         /* display: none; */
         width: 100%;
@@ -333,3 +337,62 @@ textarea{
         flex-wrap: wrap;
     }
 } 
+
+/* For Tablet */
+
+@media only screen and (max-width: 1000px) and (min-width: 501px){
+    
+    /* Header */
+    .header__second{
+        padding-right: 2rem;
+        align-items: center;
+    }
+
+    .header__second__list--icons {
+        gap: 3rem;
+    }
+    /* Contact Info */
+    .information {
+        text-align: center;
+        padding: 2rem 2rem;
+    }
+    /* Section */
+    .section{
+        display: flex;
+    }
+    .section__form{
+        /* display: none; */
+        width: 100%;
+    }
+
+    .form__flex{
+        margin-right: -3rem;
+        margin-left: -1.2rem;
+    }
+
+    .section__form__span{
+        display: block;
+        width: 100%;
+    }
+
+    .section__form__textarea{
+        width: 100%;
+    }
+
+    textarea {max-width:95%;}
+    input {
+    max-width: 95%;
+    width: -webkit-fill-available;
+    margin: 0.8rem 0;
+    }
+
+    .section__form--btn{
+        background-color: rgb(80, 224, 92);
+    /* padding: 0.5rem 3rem; */
+    color: aliceblue;
+    border-style: none;
+    align-self: flex-start;
+    padding: 1rem 4.5rem;
+    }
+
+}
