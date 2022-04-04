@@ -31,7 +31,7 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
-            <button onclick = "myFunction()"class="header__nav--icon"><box-icon id="menu" name='menu' size ="lg"></box-icon></button>
+            <button onclick = "myFunction()" class="header__nav--icon"><box-icon id="menu" name='menu' size ="lg"></box-icon></button>
         </nav>
     </header>
     <hr class="hr1">
@@ -72,7 +72,7 @@
             </div>
         <!-- Section Form -->
         <div class="section__form">
-            <form action="">
+            <form action="#">
                 <div class="form__flex">
                     <div class="section__form__span">
                         <span class="name">
@@ -136,7 +136,21 @@
         <p>Copyright &copy; 2019 realestate. All rights reserved</p>
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-    <script src="app.js"></script>
+    <script>
+        function myFunction() {
+    let info = document.getElementById("info");
+    let showmenu = document.querySelector('nav ul');
+    let header_icons = document.querySelector('.header__second__list--icons');
+    console.log(header_icons)
+    if (showmenu.style.display === "block") {
+        showmenu.style.display = "none";
+        info.style.display = "block";
+    } else {
+        showmenu.style.display = "block";
+        info.style.display = "none";
+    }
+}
+    </script>
 </body>
 
 </html>
