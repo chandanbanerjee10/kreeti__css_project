@@ -23,7 +23,7 @@
             <div class="header__second__img">
                 <img src="assets/logo.jpg" alt="Real Estate Logo">
             </div>
-            <label class="ham" for="hamburger">&#9776;</label>
+            <label id="ham_id" class="ham" for="hamburger">&#9776;</label>
             <input type="checkbox" id="hamburger" />
             <ul class="header__second__list--icons">
                 <li><a href="">Home</a></li>
@@ -32,7 +32,6 @@
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
-            
         </nav>
     </header>
     <hr class="hr1">
@@ -140,7 +139,29 @@
         <p>Copyright &copy; 2019 realestate. All rights reserved</p>
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
-    <script src="app.js"></script>
+    <script>
+        y = document.getElementById("info");
+        (function () {
+            window.onresize = displayWindowSize;
+            function displayWindowSize() {
+                let myWidth = window.innerWidth;
+                if (myWidth > 500) {
+                   y.style.display = "block";
+                }
+            };
+
+
+        })();
+        checkBox = document.getElementById('hamburger').addEventListener('click', event => {
+            if (event.target.checked) {
+                y.style.display = "none";
+            } else {
+                y.style.display = "block"
+                console.log("unchecked")
+            }
+        });
+    </script>
+
 </body>
 
 </html>

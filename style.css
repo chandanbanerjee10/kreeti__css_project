@@ -121,6 +121,7 @@ body{
 .information{
     text-align: center;
     padding: 2rem 15rem;
+    display: block;
 }
 
 .information--head{
@@ -232,6 +233,8 @@ textarea{
     color: white;
 }
 
+
+
 /* Mobile Version */
 
 
@@ -265,17 +268,6 @@ textarea{
 
     }
 
-    /* #hamburger:checked ~ .header__second__list--icons{
-        display: flex;
-    } 
-   
-
-    .header__second__hamburger{
-        display: block;
-        position: absolute;
-        right: 1.2rem;
-    } */
-
     nav li{
         padding: 0.8rem 0;
     }
@@ -307,12 +299,16 @@ textarea{
         margin: 0;
         padding: 0;
         border: 0;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.320, 1);
+        transition: all 0.2s ease-in-out;
     }
     #hamburger:checked ~ .header__second__list--icons li {
         height: 2.5em;
         padding: 0.5em;
-        transition: height 400ms cubic-bezier(0.23, 1, 0.320, 1);
+        transition: all 0.2s ease-in-out;
+    }
+
+    input[type = checkbox]:checked + .information{
+        display: none;
     }
     
 
@@ -352,7 +348,6 @@ textarea{
     /* Section Form */
 
     .section__form{
-        /* display: none; */
         width: 100%;
     }
 
@@ -401,17 +396,6 @@ textarea{
         flex-wrap: wrap;
     }
 
-    /* .icon{
-        display: block;
-    }
-
-    .header__second__list--icons li + li {
-        margin-top: 12px;
-       }
-
-    input[type=checkbox]:checked ~ .header__second__list{
-        display: block;
-       } */
 } 
 
 /* For Tablet */
