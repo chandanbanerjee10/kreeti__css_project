@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -22,54 +23,54 @@
             <div class="header__second__img">
                 <img src="assets/logo.jpg" alt="Real Estate Logo">
             </div>
-            <div class="header__second__list">
-                <ul class="header__second__list--icons">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Properties</a></li>
-                    <li><a href="">Agent</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <button onclick = "myFunction()"class="header__nav--icon"><box-icon id="menu" name='menu' size ="lg"></box-icon></button>
+            <label class="ham" for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger" />
+            <ul class="header__second__list--icons">
+                <li><a href="">Home</a></li>
+                <li><a href="">Properties</a></li>
+                <li><a href="">Agent</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            
         </nav>
     </header>
     <hr class="hr1">
 
     <!-- Contact Information  -->
 
-    <div id = "info" class="information">
+    <div id="info" class="information">
         <h2 class="information--head">Contact Information</h2>
         <p class="information--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet placeat consectetur,
             sapiente quod voluptates eius? Minus quis exercitationem distinctio dicta.</p>
     </div>
 
     <!-- Section -->
-    
+
     <!-- Section Address -->
     <section class="section">
-        
-            <div class="section__address">
-                <h3>Our Address</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus laudantium quidem
-                    repudiandae deleniti. Repudiandae </p>
-                <div class="section__address__card">
-                    <img src="assets/17427.png" alt="location">
-                    <p>198, lorem, ipsum has been industry's standard dummy</p>
-                </div>
-                <div class="section__address__card">
-                    <img src="assets/17216.png" alt="call">
-                    <p>+91 91234 56789</p>
-                </div>
-                <div class="section__address__card">
-                    <img src="assets/21-512.png" alt="message">
-                    <p>test@test.com</p>
-                </div>
-                <div class="section__address__card">
-                    <img src="assets/earth-global-globe-international-map-planet-world-2-12510.png" alt="globe">
-                    <p>http://test.com</p>
-                </div>
+
+        <div class="section__address">
+            <h3>Our Address</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus laudantium quidem
+                repudiandae deleniti. Repudiandae </p>
+            <div class="section__address__card">
+                <img src="assets/17427.png" alt="location">
+                <p>198, lorem, ipsum has been industry's standard dummy</p>
             </div>
+            <div class="section__address__card">
+                <img src="assets/17216.png" alt="call">
+                <p>+91 91234 56789</p>
+            </div>
+            <div class="section__address__card">
+                <img src="assets/21-512.png" alt="message">
+                <p>test@test.com</p>
+            </div>
+            <div class="section__address__card">
+                <img src="assets/earth-global-globe-international-map-planet-world-2-12510.png" alt="globe">
+                <p>http://test.com</p>
+            </div>
+        </div>
         <!-- Section Form -->
         <div class="section__form">
             <form action="">
@@ -93,19 +94,22 @@
 
     <!-- Map -->
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19430.937577336874!2d13.409698767618643!3d52.499643499900436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e4be6bf37cf%3A0xd304c3ba1db9016c!2sKreuzberg%2C%20Berlin%2C%20Germany!5e0!3m2!1sen!2sin!4v1648029252020!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19430.937577336874!2d13.409698767618643!3d52.499643499900436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e4be6bf37cf%3A0xd304c3ba1db9016c!2sKreuzberg%2C%20Berlin%2C%20Germany!5e0!3m2!1sen!2sin!4v1648029252020!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <!-- Footer About -->
     <div class="about">
         <div class="about__realstate">
             <p style="font-weight: 600;">About Realstate</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut eius nemo voluptatum officiis reiciendis</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut eius nemo
+                voluptatum officiis reiciendis</p>
         </div>
         <div class="about__links">
-            <p id = "links--p" style="font-weight: 600;">Links</p>
-            <ul class = "about__links--ul">
-               
+            <p id="links--p" style="font-weight: 600;">Links</p>
+            <ul class="about__links--ul">
+
                 <li><a href="">Home</a></li>
                 <li><a href="">Properties</a></li>
                 <li><a href="">Agent</a></li>
@@ -115,7 +119,7 @@
         </div>
         <div class="about__info">
             <p id="info--p" style="font-weight: 600;">Information</p>
-            <ul class="about__info--ul">          
+            <ul class="about__info--ul">
                 <li><a href="">Terms & Conditions</a></li>
                 <li><a href="">License</a></li>
                 <li><a href=""></a>Privacy & Policy</li>

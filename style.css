@@ -38,6 +38,10 @@ p, button, input, textarea, b, li{
     font-size: 1.5rem;
     color: #8c8c8c;
 }
+label{
+    font-weight: 600;
+    font-size: 2.5rem;
+}
 ul{
     list-style-type: none;  
 }
@@ -51,6 +55,7 @@ body{
 }
 
 /* header */
+
 
 .header__first{
     display: flex;
@@ -72,7 +77,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items:stretch;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 .header__second__list--icons{
@@ -84,6 +89,18 @@ body{
 .header__second__list--icons a:hover{
     color: rgb(11, 230, 11);
 }
+.icon{
+    display: none;
+}
+
+/* Hide Hamburger */
+.ham{
+    display: none;
+}
+#hamburger{
+    display: none;
+}
+
 
 .hr1{
     height: 10px;
@@ -93,6 +110,10 @@ body{
 
 .header__nav--icon{
     display: none;
+}
+
+.header__second__img{
+    padding-left: 2rem;
 }
 
 /* Contact Information */
@@ -219,24 +240,46 @@ textarea{
 
     /* Header */
 
+   img{
+       width: 180px;
+   }
+    
     .header__second{
         flex-direction: column;
         position: relative;
     }
 
-    .header__second__list{
+    /* .header__second__list{
         width: 100%;
-    }
+    } */
 
-    .header__second__list--icons{
-        display: none;
+ .header__second__list--icons{    
+        display: block;
         background-color: rgb(58, 248, 10);
-        flex-direction: column;
+        padding: 0 0;
         text-align: center;
         justify-content: space-around;
         gap: 1.5rem;
-        padding: 0.75rem 0;
+        /* position: absolute;
+        top: 0; */
+
     }
+
+    /* #hamburger:checked ~ .header__second__list--icons{
+        display: flex;
+    } 
+   
+
+    .header__second__hamburger{
+        display: block;
+        position: absolute;
+        right: 1.2rem;
+    } */
+
+    nav li{
+        padding: 0.8rem 0;
+    }
+
     nav li a{
         color: white;
     }
@@ -251,6 +294,27 @@ textarea{
     .showmenu{
         display: block;
     }
+
+    .ham{
+        display: block;
+        position: absolute;
+        right: 0;
+        padding-right: 2rem;
+    }
+
+    #hamburger ~ .header__second__list--icons li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    #hamburger:checked ~ .header__second__list--icons li {
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.320, 1);
+    }
+    
 
     /* Contact Information */
 
@@ -336,6 +400,18 @@ textarea{
         padding-right: 1rem;
         flex-wrap: wrap;
     }
+
+    /* .icon{
+        display: block;
+    }
+
+    .header__second__list--icons li + li {
+        margin-top: 12px;
+       }
+
+    input[type=checkbox]:checked ~ .header__second__list{
+        display: block;
+       } */
 } 
 
 /* For Tablet */
