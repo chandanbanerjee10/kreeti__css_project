@@ -205,9 +205,9 @@ map{
     margin-bottom: 3rem;
 }
 
-/* .about__realstate{
+.about__realstate{
     max-width: 28rem;
-} */
+} 
 .about__realstate--heading{
     font-weight: 600;
 }
@@ -372,6 +372,7 @@ map{
 
     .about__realstate{
         margin-bottom: -2rem;
+        max-width: 100%;
     }
 
     .about__links--ul, .about__info--ul{
