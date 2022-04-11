@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Project</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-<div class="container">
-    <!-- Header -->
-
+   <div class = "container">
+        <!-- Header -->
+  
     <header class="header">
         <nav class="header__first">
             <img class="header__first--icon" src="assets/mobile-phone-icon-png-0.jpg.png" alt="Mobile logo">
@@ -32,47 +33,50 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
-            <button onclick = "myFunction()" class="header__nav--icon"><box-icon id="menu" name='menu' size ="lg"></box-icon></button>
+            <button onclick="myFunction()" class="header__nav--icon">
+                <img id = "hamburger" src="assets/bars-solid.svg" alt="hamburger icon">
+            </button>
         </nav>
     </header>
     <hr class="hr1">
 
     <!-- Contact Information  -->
 
-    <div id = "info" class="information">
+    <article id="info" class="information">
         <h2 class="information--head">Contact Information</h2>
-        <p class="information--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet placeat consectetur,
+        <p class="information--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet placeat
+            consectetur,
             sapiente quod voluptates eius? Minus quis exercitationem distinctio dicta.</p>
-    </div>
+    </article>
 
     <!-- Section -->
-    
+
     <!-- Section Address -->
     <section class="section">
-            <div class="section__address">
-                <h3>Our Address</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus laudantium quidem
-                    repudiandae deleniti. Repudiandae </p>
-                <div class="section__address__card">
-                    <img src="assets/17427.png" alt="location">
-                    <p>198, lorem, ipsum has been industry's standard dummy</p>
-                </div>
-                <div class="section__address__card">
-                    <img src="assets/17216.png" alt="call">
-                    <p>+91 91234 56789</p>
-                </div>
-                <div class="section__address__card">
-                    <img src="assets/21-512.png" alt="message">
-                    <p>test@test.com</p>
-                </div>
-                <div class="section__address__card">
-                    <img src="assets/earth-global-globe-international-map-planet-world-2-12510.png" alt="globe">
-                    <p>http://test.com</p>
-                </div>
-            </div> 
+        <div class="section__address">
+            <h3>Our Address</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus laudantium quidem
+                repudiandae deleniti. Repudiandae </p>
+            <div class="section__address__card">
+                <img src="assets/17427.png" alt="location">
+                <p>198, lorem, ipsum has been industry's standard dummy</p>
+            </div>
+            <div class="section__address__card">
+                <img src="assets/17216.png" alt="call">
+                <p>+91 91234 56789</p>
+            </div>
+            <div class="section__address__card">
+                <img src="assets/21-512.png" alt="message">
+                <p>test@test.com</p>
+            </div>
+            <div class="section__address__card">
+                <img src="assets/earth-global-globe-international-map-planet-world-2-12510.png" alt="globe">
+                <p>http://test.com</p>
+            </div>
+        </div>
 
         <!-- Section Form -->
-         <div class="section__form">
+        <div class="section__form">
             <form action="#">
                 <div class="form__flex">
                     <div class="section__form__span">
@@ -94,19 +98,22 @@
 
     <!-- Map -->
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19430.937577336874!2d13.409698767618643!3d52.499643499900436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e4be6bf37cf%3A0xd304c3ba1db9016c!2sKreuzberg%2C%20Berlin%2C%20Germany!5e0!3m2!1sen!2sin!4v1648029252020!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19430.937577336874!2d13.409698767618643!3d52.499643499900436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e4be6bf37cf%3A0xd304c3ba1db9016c!2sKreuzberg%2C%20Berlin%2C%20Germany!5e0!3m2!1sen!2sin!4v1648029252020!5m2!1sen!2sin"
+            width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
     <!-- About -->
-    <div class="about">
+    <section class="about">
         <div class="about__realstate">
-            <p style="font-weight: 600;">About Realstate</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut eius nemo voluptatum officiis reiciendis</p>
+            <p class="about__realstate--heading">About Realstate</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut eius nemo
+                voluptatum officiis reiciendis</p>
         </div>
         <div class="about__links">
-            <p id = "links--p" style="font-weight: 600;">Links</p>
-            <ul class = "about__links--ul">
-               
+            <p class="about__realstate--heading" id="links--p">Links</p>
+            <ul class="about__links--ul">
+
                 <li><a href="">Home</a></li>
                 <li><a href="">Properties</a></li>
                 <li><a href="">Agent</a></li>
@@ -115,23 +122,25 @@
             </ul>
         </div>
         <div class="about__info">
-            <p id="info--p" style="font-weight: 600;">Information</p>
-            <ul class="about__info--ul">          
-                <li><a href="">Terms & Conditions</a></li>
+            <p class="about__realstate--heading" id="info--p">Information</p>
+            <ul class="about__info--ul">
+                <li id="about__info--Desktop"><a href="">Terms & Conditions</a></li>
+                <li id="about__info--Mobile"><a href="">T & C</a></li>
                 <li><a href="">License</a></li>
                 <li><a href=""></a>Privacy & Policy</li>
                 <li><a href=""></a>Contact Us</li>
             </ul>
         </div>
         <div class="about__newsletter">
-            <p style="font-weight: 600;">NewsLetter</p>
-            <span class="name">
+            <p class="about__realstate--heading" id = "about__newsletter--p">NewsLetter</p>
+            <span class="about__newsletter__name">
                 <input type="text" placeholder="Email">
+                <button class="about__newsletter--btn">Sign Up</button>
             </span>
-            <button class="about__newsletter--btn">Sign Up</button>
+            
         </div>
-    </div> 
-</div>
+    </section>
+   </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -139,19 +148,20 @@
     </footer>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script>
+        // window.onresize = () => { window.location.reload()}
         function myFunction() {
-    let info = document.getElementById("info");
-    let showmenu = document.querySelector('nav ul');
-    let header_icons = document.querySelector('.header__second__list--icons');
-    console.log(header_icons)
-    if (showmenu.style.display === "block") {
-        showmenu.style.display = "none";
-        info.style.display = "block";
-    } else {
-        showmenu.style.display = "block";
-        info.style.display = "none";
-    }
-}
+            let info = document.getElementById("info");
+            let showmenu = document.querySelector('nav ul');
+            let header_icons = document.querySelector('.header__second__list--icons');
+            console.log(header_icons)
+            if (showmenu.style.display === "block") {
+                showmenu.style.display = "none";
+                info.style.display = "block";
+            } else {
+                showmenu.style.display = "block";
+                info.style.display = "none";
+            }
+        }
     </script>
 </body>
 

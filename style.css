@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -53,12 +53,19 @@ html{
 body{
     font-family: "Poppins", sans-serif; 
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 footer{
-    position: sticky;
+    margin-top: auto;
     bottom: 0;
     width: 100%;
+}
+
+button{
+    border-style: none;
+    font-weight: 900;
 }
 
 /* header */
@@ -177,6 +184,12 @@ textarea{
     width: 100%;
 }
 
+/* Map */
+
+map{
+    border: 0;
+}
+
 /* About */
 
 .about p, .about b{
@@ -192,15 +205,17 @@ textarea{
     margin-bottom: 3rem;
 }
 
-.about__realstate{
+/* .about__realstate{
     max-width: 28rem;
+} */
+.about__realstate--heading{
+    font-weight: 600;
 }
-
 .about__realstate p, .about__links--ul li, .about__info--ul li{
     padding-bottom: 0.5rem;
 }
 
-.about__newsletter p{
+#about__newsletter p{
     padding-bottom: 1.5rem;
 }
 
@@ -209,6 +224,10 @@ textarea{
     color: aliceblue;
     border-style: none;
     padding: 1rem 1.5rem;
+}
+
+#about__info--Mobile{
+    display: none;
 }
 
 /* Footer */
@@ -266,12 +285,16 @@ textarea{
     .header__nav--icon{
         display: inline-block;
         position: absolute;
-        top: 0;
+        top: 0.5rem;
         right: 2rem;
     }
 
     .showmenu{
         display: block;
+    }
+
+    #hamburger{
+        height: 3rem;
     }
 
     /* Contact Information */
@@ -354,9 +377,27 @@ textarea{
     .about__links--ul, .about__info--ul{
         display: flex;
         gap: 1rem;
-        /* justify-content: center; */
+        justify-content: space-between;
         padding-right: 1rem;
         flex-wrap: wrap;
+    }
+
+    .about__newsletter__name{
+        display: flex;
+        align-items: center;
+    }
+
+    .about__newsletter--btn{
+        height: 3.5rem;
+        width: 12rem;
+        padding: 0;
+    }
+
+    #about__info--Mobile{
+        display: block;
+    }
+    #about__info--Desktop{
+        display: none;
     }
 } 
 
