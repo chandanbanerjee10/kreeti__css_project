@@ -68,6 +68,11 @@ button{
     font-weight: 900;
 }
 
+.container1{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 /* header */
 
 .header__first{
