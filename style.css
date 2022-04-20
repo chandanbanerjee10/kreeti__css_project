@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    
 }
+
 a{
     text-decoration: none;
     font-weight: 400;
@@ -31,6 +33,11 @@ h2{
 h3{
     font-weight: 400;
     font-size: 1.8rem;
+}
+
+h4{
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 p, button, input, textarea, b, li, section, article, address{
@@ -69,7 +76,7 @@ button{
     font-weight: 900;
 }
 
-.container1{
+.container{
     max-width: 1600px;
     margin: 0 auto;
     min-height: 100%;
@@ -113,11 +120,12 @@ button{
     color: rgb(11, 230, 11);
 }
 
-.hr1{
-    height: 10px;
-    border: 0;
-    box-shadow: 0 10px 10px -10px #8c8c8c inset;
+
+.header__nav--icon{
+    display: none;
 }
+
+/* Hamburger Hide */
 
 .header__nav--icon{
     display: none;
@@ -196,13 +204,17 @@ textarea{
 
 /* Map */
 
-map{
+.map{
     border: 0;
+}
+
+iframe{
+    width: 100%;
 }
 
 /* About */
 
-.about p, .about b{
+.about p, .about b, .about h4{
     color: rgb(63, 61, 61)
 }
 
@@ -213,6 +225,7 @@ map{
     padding: 0 1.5rem;
     flex-wrap: wrap;
     margin-bottom: 3rem;
+    margin-top: 1.5rem;
 }
 
 .about a{
@@ -225,11 +238,12 @@ map{
 .about__realstate--heading{
     font-weight: 600;
 }
-.about__realstate p, .about__links--ul li, .about__info--ul li{
+/* .about__realstate p, .about__links--ul li, .about__info--ul li{
     padding-bottom: 0.5rem;
-}
+} */
 
-#about__newsletter p{
+
+#about__newsletter--p, #links--p, #info--p{
     padding-bottom: 1.5rem;
 }
 
@@ -308,7 +322,7 @@ map{
     }
 
     .showmenu{
-        display: block;
+        background-color: red;
     }
 
     #hamburger{

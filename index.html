@@ -16,10 +16,10 @@
             <!-- Header -->
 
             <header class="header">
-                <header class="header__first">
+                <figure class="header__first">
                     <img class="header__first--icon" src="assets/mobile-phone-icon-png-0.jpg.png" alt="Mobile logo">
                     <p>+91 91234 56789</p>
-                </header>
+                </figure>
                 <nav class="header__second">
                     <div class="header__second__img">
                         <img src="assets/logo.jpg" alt="Real Estate Logo">
@@ -33,8 +33,7 @@
                             <li><a href="">Contact</a></li>
                         </ul>
                     </div>
-                    <button onclick="myFunction()" class="header__nav--icon">
-
+                    <button id="btnn" class="header__nav--icon">
                         <img id="hamburger" src="assets/bars-solid.svg" alt="hamburger icon">
                     </button>
                 </nav>
@@ -51,10 +50,10 @@
             </section>
 
             <!-- Section -->
-            
+
             <!-- Section Address -->
-            <section class="section">
-                <address class="section__address">
+            <div class="section" id="section_id">
+                <section class="section__address">
                     <h3>Our Address</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus laudantium quidem
                         repudiandae deleniti. Repudiandae </p>
@@ -74,10 +73,10 @@
                         <img src="assets/earth-global-globe-international-map-planet-world-2-12510.png" alt="globe">
                         <p>http://test.com</p>
                     </div>
-                </address>
-            
+                </section>
+
                 <!-- Section Form -->
-              <aside class="section__form">
+                <aside class="section__form">
                     <form action="#">
                         <div class="form__flex">
                             <div class="section__form__span">
@@ -95,25 +94,26 @@
                         </div>
                     </form>
                 </aside>
-            </section>
+            </div>
 
             <!-- Map -->
             <div class="map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19430.937577336874!2d13.409698767618643!3d52.499643499900436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e4be6bf37cf%3A0xd304c3ba1db9016c!2sKreuzberg%2C%20Berlin%2C%20Germany!5e0!3m2!1sen!2sin!4v1648029252020!5m2!1sen!2sin"
-                    width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>
+                    height="450" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
             <!-- About -->
-            <section class="about">
+            <div class="about">
                 <article class="about__realstate">
-                    <p class="about__realstate--heading">About Realstate</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut eius
+                    <h4 class="about__realstate--heading">About Realstate</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut
+                        eius
                         nemo
                         voluptatum officiis reiciendis</p>
                 </article>
                 <article class="about__links">
-                    <p class="about__realstate--heading" id="links--p">Links</p>
+                    <h4 class="about__realstate--heading" id="links--p">Links</h4>
                     <ul class="about__links--ul">
 
                         <li><a href="">Home</a></li>
@@ -124,7 +124,7 @@
                     </ul>
                 </article>
                 <article class="about__info">
-                    <p class="about__realstate--heading" id="info--p">Information</p>
+                    <h4 class="about__realstate--heading" id="info--p">Information</h4>
                     <ul class="about__info--ul">
                         <li id="about__info--Desktop"><a href="">Terms & Conditions</a></li>
                         <li id="about__info--Mobile"><a href="">T & C</a></li>
@@ -134,13 +134,13 @@
                     </ul>
                 </article>
                 <article class="about__newsletter">
-                    <p class="about__realstate--heading" id="about__newsletter--p">NewsLetter</p>
+                    <h4 class="about__realstate--heading" id="about__newsletter--p">NewsLetter</h4>
                     <span class="about__newsletter__name">
                         <input type="text" placeholder="Email">
                         <button class="about__newsletter--btn">Sign Up</button>
                     </span>
                 </article>
-            </section>
+            </div>
         </div>
         <!-- Footer -->
         <footer class="footer">
@@ -149,20 +149,29 @@
     </div>
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script>
-        // window.onresize = () => { window.location.reload()}
-        function myFunction() {
-            let info = document.getElementById("info");
-            let showmenu = document.querySelector('nav ul');
-            let header_icons = document.querySelector('.header__second__list--icons');
-            console.log(header_icons)
-            if (showmenu.style.display === "block") {
-                showmenu.style.display = "none";
-                info.style.display = "block";
+        var x = document.getElementById("btnn");
+        var drop = document.getElementsByClassName("header__second__list--icons")[0];
+        var address = document.getElementById("section_id")
+        var info = document.getElementById("info");
+        var b = true;
+        x.addEventListener("click", function () {
+            console.log(b);
+            if (b) {
+                drop.style.display = "block";
+                info.style.position = "absolute";
+                info.style.top = "52px"
+                info.style.left = "0"
+                info.style.zIndex = "-1";
+                address.style.marginTop = "13px"
+
             } else {
-                showmenu.style.display = "block";
-                info.style.display = "none";
+                drop.style.display = "none";
+                info.style.position = "relative";
+                info.style.top = "0"
+                address.style.marginTop = "0px";
             }
-        }
+            b = !b;
+        });
     </script>
 </body>
 
