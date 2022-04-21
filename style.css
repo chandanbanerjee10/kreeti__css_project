@@ -92,6 +92,7 @@ button{
     gap: 1rem;
     padding-right: 1rem;
     align-items: center;
+    height: 50px;
     /* padding-top: 0.3rem; */
 }
 
@@ -108,6 +109,7 @@ button{
     align-items: center;
     padding: 0 2rem;
     box-shadow: 0 4px 6px -2px #8c8c8c;
+    height: 70px;
 }
 
 .header__second__list--icons{
@@ -138,9 +140,12 @@ button{
     padding: 2rem 15rem;
 }
 
-.information--head{
+.information--head {
     color: rgb(11, 230, 11);
+    font-size: 3rem;  
+    font-weight: 400;
 }
+
 
 /* section */
 
@@ -148,6 +153,7 @@ button{
     display: flex;
     gap: 5rem;
     padding: 2rem 3rem;
+    margin-top: 2rem;
 }
 
 /* Section Adress */ 
@@ -168,8 +174,14 @@ button{
     align-items: center;
 }
 
-/* Section form */
+.section__address--head{
+    color: black;
+}
 
+/* Section form */
+.section__form{
+    margin-top: 4.8rem;
+}
 .form__flex{
     display: flex;
     flex-direction: column;
@@ -181,12 +193,13 @@ button{
     gap: 0.8rem;
 }
 .section__form--btn{
-    background-color: rgb(80, 224, 92);
+    background-color: #35cb68;
     /* padding: 0.5rem 3rem; */
     color: aliceblue;
     border-style: none;
     align-self: flex-start;
     padding: 1rem 4.5rem;
+    font-weight: 600;
 }
 
 input,textarea{
@@ -238,9 +251,9 @@ iframe{
 .about__realstate--heading{
     font-weight: 600;
 }
-/* .about__realstate p, .about__links--ul li, .about__info--ul li{
-    padding-bottom: 0.5rem;
-} */
+.about__realstate p, .about__links--ul li, .about__info--ul li{
+    padding-bottom: 1rem;
+}
 
 
 #about__newsletter--p, #links--p, #info--p{
@@ -248,10 +261,11 @@ iframe{
 }
 
 .about__newsletter--btn{
-    background-color: rgb(58, 248, 10);
+    background-color: #02cd02;
     color: aliceblue;
     border-style: none;
     padding: 7px 1.5rem;
+    font-weight: 400;
 }
 
 .about__newsletter__name{
@@ -266,11 +280,12 @@ iframe{
 
 .footer{
     background-color: #8c8c8c;
-    padding: 0.05rem 0;
+    padding: 0.5px 0;
     text-align: center;
 }
 .footer p{
     color: white;
+    margin: 10px;
 }
 
 /* Mobile Version */
@@ -288,7 +303,7 @@ iframe{
         flex-direction: column;
         position: relative;
         align-items: stretch;
-
+        height: 45px;
     }
 
     .header__second__list{
@@ -414,6 +429,11 @@ iframe{
         justify-content: space-between;
         padding-right: 1rem;
         flex-wrap: wrap;
+        order: -1;
+    }
+     
+    .about ul li{
+        margin: 1rem;
     }
 
     .about__newsletter__name{
@@ -484,7 +504,6 @@ iframe{
     }
 
     .section__form--btn{
-        background-color: rgb(80, 224, 92);
     /* padding: 0.5rem 3rem; */
     color: aliceblue;
     border-style: none;
