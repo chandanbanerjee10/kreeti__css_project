@@ -84,6 +84,12 @@ button{
     flex-direction: column;
 }
 
+#div{
+    width: 100%;
+    box-shadow: 0 4px 6px -2px #8c8c8c;
+    height: 120px;
+}
+
 /* header */
 
 .header__first{
@@ -108,7 +114,7 @@ button{
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    box-shadow: 0 4px 6px -2px #8c8c8c;
+    /* box-shadow: 0 4px 6px -2px #8c8c8c; */
     height: 70px;
 }
 
@@ -321,7 +327,9 @@ iframe{
         margin: 0 -2rem;
     }
 
-    
+    #div{
+        height: 100px;
+    }
     nav li{
         padding: 10px 0;
     }
@@ -513,3 +521,9 @@ iframe{
 
 }
 
+@media only screen and (min-width: 720px){
+    
+    #div .container{
+        text-align: center;
+    }
+}
