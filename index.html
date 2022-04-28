@@ -17,10 +17,10 @@
                 <!-- Header -->
 
                 <header class="header">
-                    <figure class="header__first">
+                    <div class="header__first">
                         <img class="header__first--icon" src="assets/mobile-phone-icon-png-0.jpg.png" alt="Mobile logo">
                         <p>+91 91234 56789</p>
-                    </figure>
+                    </div>
                     <nav class="header__second">
                         <div class="header__second__img">
                             <img src="assets/logo.jpg" alt="Real Estate Logo">
@@ -135,8 +135,7 @@
                     <article class="about__newsletter">
                         <h4 class="about__realstate--heading" id="about__newsletter--p">NewsLetter</h4>
                         <span class="about__newsletter__name">
-                            <input type="text" placeholder="Email">
-                            <button class="about__newsletter--btn"> Sign Up </button>
+                            <input type="text" placeholder="Email"><button class="about__newsletter--btn"> Sign Up </button>        
                         </span>
                     </article>
                 </div>
@@ -167,15 +166,15 @@
             b = !b;
         }
 
-        function findHeight(){
-            // console.log(info.offsetHeight);
-            drop.style.height = info.offsetHeight + "px";
-            for(var i = 0; i < lis.length; i++){
-                lis[i].style.height = "20%";
-            }
-        }
+        // function findHeight(){
+        //     // console.log(info.offsetHeight);
+        //     drop.style.height = info.offsetHeight + "px";
+        //     for(var i = 0; i < lis.length; i++){
+        //         lis[i].style.height = "20%";
+        //     }
+        // }
         function abc(){
-            findHeight();
+            // findHeight();
             dropdown();
         }
   

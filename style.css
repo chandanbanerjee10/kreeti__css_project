@@ -168,6 +168,7 @@ button{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    text-align: left;
 }
 
 .section__address img{
@@ -225,6 +226,7 @@ textarea{
 
 .map{
     border: 0;
+    background-color: #efefef;
 }
 
 iframe{
@@ -241,18 +243,20 @@ iframe{
     display: flex;
     gap: 1rem;
     justify-content: space-between;
-    padding: 0 1.5rem;
+    padding: 1.5rem 2rem 4rem 2rem;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
-    margin-top: 1.5rem;
+    /* margin-bottom: 3rem;
+    margin-top: 1.5rem; */
+    text-align: left;
+    background-color: #efefef;
 }
 
 .about a{
-    color: black;
+    color: rgb(63, 61, 61);
 }
 
 .about__realstate{
-    max-width: 28rem;
+    max-width: 22rem;
 } 
 .about__realstate--heading{
     font-weight: 600;
@@ -261,7 +265,9 @@ iframe{
     padding-bottom: 1rem;
 }
 
-
+.about__newsletter__name input{
+    width: 17rem;
+}
 #about__newsletter--p, #links--p, #info--p{
     padding-bottom: 1.5rem;
 }
@@ -270,8 +276,8 @@ iframe{
     background-color: #02cd02;
     color: aliceblue;
     border-style: none;
-    padding: 7px 1.5rem;
-    font-weight: 400;
+    padding: 9px 1.5rem;
+    font-weight: 400;  
 }
 
 .about__newsletter__name{
@@ -285,7 +291,7 @@ iframe{
 /* Footer */
 
 .footer{
-    background-color: #8c8c8c;
+    background-color: #999999;
     padding: 0.5px 0;
     text-align: center;
 }
@@ -331,7 +337,7 @@ iframe{
         height: 100px;
     }
     nav li{
-        padding: 10px 0;
+        padding: 13px 0;
     }
     nav li a{
         color: white;
@@ -373,6 +379,7 @@ iframe{
 
     .section__address{
         text-align: center; 
+        gap: 0.5rem;
     }
 
     .section__address__card{
@@ -415,6 +422,11 @@ iframe{
 
     .section__form--btn{width: 95%;}
 
+    /* Map */
+     iframe{
+        height: 200px;
+    }
+
     /* About */
 
     .about{
@@ -423,30 +435,32 @@ iframe{
         position: relative;
         flex-wrap: nowrap;
         gap: 2rem;
+        padding: 0 2rem;
     }
 
 
     .about__realstate{
+        margin-top: 1.5rem;
         margin-bottom: -2rem;
         max-width: 100%;
     }
 
     .about__links--ul, .about__info--ul{
         display: flex;
-        gap: 1rem;
         justify-content: space-between;
         padding-right: 1rem;
         flex-wrap: wrap;
         order: -1;
     }
      
-    .about ul li{
-        margin: 1rem;
-    }
 
     .about__newsletter__name{
         display: flex;
         align-items: center;
+    }
+
+    .about__newsletter__name input{
+        width: 100%;
     }
 
     .about__newsletter--btn{
@@ -517,6 +531,11 @@ iframe{
     border-style: none;
     align-self: flex-start;
     padding: 1rem 4.5rem;
+    }
+
+    /* About */
+    .about__realstate{
+        max-width: 17rem;
     }
 
 }
