@@ -12,20 +12,21 @@
 
 <body>
     <div class="container1">
-        <div id="div">
+        <div class="nav-box-shadow">
             <div class="container">
                 <!-- Header -->
-                <header class="header__first">
-                        <img class="header__first--icon" src="assets/mobile-phone-icon-png-0.jpg.png" alt="Mobile logo">
+                <header class="header">
+                        <img class="header--icon" src="assets/mobile-phone-icon-png-0.jpg.png" alt="Mobile logo">
                         <p>+91 91234 56789</p>
                 </header>
 
-                <nav class="header__second">
-                        <div class="header__second__img">
+                <!-- Navigation -->
+                <nav class="navbar">
+                        <div class="navbar__img">
                             <img src="assets/logo.jpg" alt="Real Estate Logo">
                         </div>
-                        <div class="header__second__list">
-                            <ul class="header__second__list--icons">
+                        <div class="navbar__list">
+                            <ul class="navbar__list--icons">
                                 <li><a href="">Home</a></li>
                                 <li><a href="">Properties</a></li>
                                 <li><a href="">Agent</a></li>
@@ -33,7 +34,7 @@
                                 <li><a href="">Contact</a></li>
                             </ul>
                         </div>
-                        <button id="btnn" class="header__nav--icon">
+                        <button id="btnn" class="navbar--icon">
                             <img id="hamburger" src="assets/bars-solid.svg" alt="hamburger icon">
                         </button>
                 </nav>
@@ -53,11 +54,11 @@
                 <div class="section" id="section_id">
                     <section class="section__address">
                         <h3 class="section__address--head">Our Address</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus laudantium quidem
-                            repudiandae deleniti. Repudiandae </p>
+                        <p class="section__address--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus laudantium quidem
+                            repudiandae deleniti. Repudiandae Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                         <div class="section__address__card">
                             <img src="assets/17427.png" alt="location">
-                            <p>198, lorem, ipsum has been industry's standard dummy</p>
+                            <p>198,  lorem,  ipsum has  been  industry's  standard  dummy</p>
                         </div>
                         <div class="section__address__card">
                             <img src="assets/17216.png" alt="call">
@@ -104,14 +105,14 @@
                 <!-- About -->
                 <div class="about">
                     <article class="about__realstate">
-                        <h4 class="about__realstate--heading">About Realstate</h4>
+                        <h4 class="about--heading">About Realstate</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut
                             eius
                             nemo
                             voluptatum officiis reiciendis</p>
                     </article>
                     <article class="about__links">
-                        <h4 class="about__realstate--heading" id="links--p">Links</h4>
+                        <h4 class="about--heading" id="about__links--h">Links</h4>
                         <ul class="about__links--ul">
                             <li><a href="">Home</a></li>
                             <li><a href="">Properties</a></li>
@@ -121,7 +122,7 @@
                         </ul>
                     </article>
                     <article class="about__info">
-                        <h4 class="about__realstate--heading" id="info--p">Information</h4>
+                        <h4 class="about--heading" id="about__info--h">Information</h4>
                         <ul class="about__info--ul">
                             <li id="about__info--Desktop"><a href="">Terms & Conditions</a></li>
                             <li id="about__info--Mobile"><a href="">T & C</a></li>
@@ -131,7 +132,7 @@
                         </ul>
                     </article>
                     <article class="about__newsletter">
-                        <h4 class="about__realstate--heading" id="about__newsletter--p">NewsLetter</h4>
+                        <h4 class="about--heading" id="about__newsletter--h">NewsLetter</h4>
                         <span class="about__newsletter__name">
                             <input type="text" placeholder="Email"><button class="about__newsletter--btn"> Sign Up </button>        
                         </span>
@@ -147,36 +148,17 @@
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <script>
         var x = document.getElementById("btnn");
-        var drop = document.getElementsByClassName("header__second__list--icons")[0];
-        var address = document.getElementById("section_id")
-        var info = document.getElementById("info");
-       
+        var drop = document.getElementsByClassName("navbar__list--icons")[0];   
         var b = true;    
-        let lis = document.querySelector(".header__second__list--icons").getElementsByTagName('li');
-
         function dropdown(){
             if(b){
                 drop.style.display = "block";
-                // console.log("abc",drop.offsetHeight);
             }else{
                 drop.style.display = "none";
             }
             b = !b;
-        }
-
-        // function findHeight(){
-        //     // console.log(info.offsetHeight);
-        //     drop.style.height = info.offsetHeight + "px";
-        //     for(var i = 0; i < lis.length; i++){
-        //         lis[i].style.height = "20%";
-        //     }
-        // }
-        function abc(){
-            // findHeight();
-            dropdown();
-        }
-  
-        x.addEventListener("click", abc);
+        }  
+        x.addEventListener("click", dropdown);
 
     </script>
 </body>

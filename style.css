@@ -45,6 +45,7 @@ p, button, input, textarea, b, li, section, article, address{
     font-size: 1.5rem;
     color: #8c8c8c;
 }
+
 address{
     font-style: normal;
 }
@@ -84,58 +85,53 @@ button{
     flex-direction: column;
 }
 
-#div{
-    width: 100%;
-    box-shadow: 0 4px 6px -2px #8c8c8c;
-    height: 120px;
-}
 
-/* header */
 
-.header__first{
+/* Header */
+
+.header{
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
     padding-right: 1rem;
     align-items: center;
     height: 50px;
-    /* padding-top: 0.3rem; */
 }
 
-.header__first--icon{
+.header--icon{
     height: auto;
     width: auto;
     max-width: 25px;
     max-height: 25px;
 }
 
-.header__second{
+/* Navbar */
+
+.navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
-    /* box-shadow: 0 4px 6px -2px #8c8c8c; */
     height: 70px;
 }
 
-.header__second__list--icons{
+.navbar__list--icons{
     display: flex;
     justify-content: center;
     gap: 4rem;
-    /* font-size: 4rem; */
 }
-.header__second__list--icons a:hover{
+.navbar__list--icons a:hover{
     color: rgb(11, 230, 11);
 }
 
-
-.header__nav--icon{
-    display: none;
+.nav-box-shadow{
+    width: 100%;
+    box-shadow: 0 4px 6px -2px #8c8c8c;
+    height: 120px;
 }
 
-/* Hamburger Hide */
 
-.header__nav--icon{
+.navbar--icon{
     display: none;
 }
 
@@ -169,6 +165,7 @@ button{
     flex-direction: column;
     flex-wrap: wrap;
     text-align: left;
+    /* width: 60%; */
 }
 
 .section__address img{
@@ -184,6 +181,7 @@ button{
 .section__address--head{
     color: black;
 }
+
 
 /* Section form */
 .section__form{
@@ -241,12 +239,9 @@ iframe{
 
 .about{
     display: flex;
-    gap: 1rem;
     justify-content: space-between;
     padding: 1.5rem 2rem 4rem 2rem;
     flex-wrap: wrap;
-    /* margin-bottom: 3rem;
-    margin-top: 1.5rem; */
     text-align: left;
     background-color: #efefef;
 }
@@ -256,9 +251,10 @@ iframe{
 }
 
 .about__realstate{
-    max-width: 22rem;
+    min-width: 17rem;
+    width: 30%;
 } 
-.about__realstate--heading{
+.about--heading{
     font-weight: 600;
 }
 .about__realstate p, .about__links--ul li, .about__info--ul li{
@@ -268,9 +264,10 @@ iframe{
 .about__newsletter__name input{
     width: 17rem;
 }
-#about__newsletter--p, #links--p, #info--p{
+#about__newsletter--h, #about__links--h, #about__info--h{
     padding-bottom: 1.5rem;
 }
+
 
 .about__newsletter--btn{
     background-color: #02cd02;
@@ -300,29 +297,31 @@ iframe{
     margin: 10px;
 }
 
+
 /* Mobile Version */
 
 
 
 @media only screen and (max-width: 500px){
 
-    /* Header */
-
-    .header__second__img img{
-        width: 180px;
-    }
-    .header__second{
+    /* Navbar */
+  
+    .navbar{
         flex-direction: column;
         position: relative;
         align-items: stretch;
         height: 45px;
     }
 
-    .header__second__list{
+    .navbar__img img{
+        width: 180px;
+    }
+
+    .navbar__list{
         width: 100%;
     }
 
-    .header__second__list--icons{
+    .navbar__list--icons{
         display: none;
         background-color: rgb(58, 248, 10);
         flex-direction: column;
@@ -333,7 +332,7 @@ iframe{
         margin: 0 -2rem;
     }
 
-    #div{
+    .nav-box-shadow{
         height: 100px;
     }
     nav li{
@@ -343,15 +342,11 @@ iframe{
         color: white;
     }
 
-    .header__nav--icon{
+    .navbar--icon{
         display: inline-block;
         position: absolute;
         top: 0.5rem;
         right: 2rem;
-    }
-
-    .showmenu{
-        background-color: red;
     }
 
     #hamburger{
@@ -395,7 +390,6 @@ iframe{
     /* Section Form */
 
     .section__form{
-        /* display: none; */
         width: 100%;
     }
 
@@ -423,6 +417,7 @@ iframe{
     .section__form--btn{width: 95%;}
 
     /* Map */
+
      iframe{
         height: 200px;
     }
@@ -442,7 +437,7 @@ iframe{
     .about__realstate{
         margin-top: 1.5rem;
         margin-bottom: -2rem;
-        max-width: 100%;
+        width: 100%;
     }
 
     .about__links--ul, .about__info--ul{
@@ -450,7 +445,6 @@ iframe{
         justify-content: space-between;
         padding-right: 1rem;
         flex-wrap: wrap;
-        order: -1;
     }
      
 
@@ -479,15 +473,15 @@ iframe{
 
 /* For Tablet */
 
-@media only screen and (max-width: 720px) and (min-width: 501px){
+@media only screen and (max-width: 800px) and (min-width: 501px){
     
-    /* Header */
-    .header__second{
+    /* Navbar */
+    .navbar{
         padding-right: 2rem;
         align-items: center;
     }
 
-    .header__second__list--icons {
+    .navbar__list--icons {
         gap: 1.5rem;
     }
     /* Contact Info */
@@ -499,8 +493,10 @@ iframe{
     .section{
         display: flex;
     }
+    .section__address{
+        width: 100%;
+    }
     .section__form{
-        /* display: none; */
         width: 100%;
     }
 
@@ -526,7 +522,6 @@ iframe{
     }
 
     .section__form--btn{
-    /* padding: 0.5rem 3rem; */
     color: aliceblue;
     border-style: none;
     align-self: flex-start;
@@ -540,9 +535,9 @@ iframe{
 
 }
 
-@media only screen and (min-width: 720px){
+@media only screen and (min-width: 800px){
     
-    #div .container{
+    .nav-box-shadow .container{
         text-align: center;
     }
 }
