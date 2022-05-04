@@ -13,8 +13,10 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <img class="header--icon" src="assets/mobile-phone-icon-png-0.jpg.png" alt="Mobile logo">
-        <span>+91 91234 56789</span>
+        <div class="header__content">
+            <img class="header--icon" src="assets/mobile-phone-icon-png-0.jpg.png" alt="Mobile logo">
+            <span>+91 91234 56789</span>
+        </div>
     </header>
 
     <!-- Navigation -->
@@ -54,8 +56,8 @@
         <!-- Section -->
 
         <!-- Section Address -->
-        <div class="section" id="section_id">
-            <section class="section__address">
+        <section class="section" id="section_id">
+            <div class="section__address">
                 <h3 class="section__address--head">Our Address</h3>
                 <p class="section__address--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
                     temporibus laudantium quidem
@@ -65,26 +67,27 @@
                     <span>198, lorem, ipsum has been industry's standard dummy</span>
                 </div>
                 <div class="section__address__card">
-                    <a href="tel:+91 91234 56789"><img src="assets/17216.png" alt="call"></a>
-                   <a href="tel:+91 91234 56789">+91 91234 56789</a> 
+                    <a href="tel:+919123456789"><img src="assets/17216.png" alt="call"></a>
+                    <a href="tel:+919123456789">+91 91234 56789</a>
                 </div>
                 <div class="section__address__card">
-                    <a href="mailto:test@test.com" target="blank"><img src="assets/21-512.png" alt="message"></a> 
-                    <a href="mailto:test@test.com" target="blank">test@test.com</a>
+                    <a href="mailto:test@test.com" target="_top"><img src="assets/21-512.png" alt="message"></a>
+                    <a href="mailto:test@test.com" target="_top">test@test.com</a>
                 </div>
                 <div class="section__address__card">
-                  <a href="http://test.com" target="blank"><img src="assets/earth-global-globe-international-map-planet-world-2-12510.png" alt="globe"> </a> 
+                    <a href="http://test.com" target="blank"><img
+                            src="assets/earth-global-globe-international-map-planet-world-2-12510.png" alt="globe"> </a>
                     <a href="http://test.com" target="blank">http://test.com</a>
                 </div>
-            </section>
+            </div>
 
             <!-- Section Form -->
             <div class="section__form">
                 <form action="#">
                     <div class="form__flex">
-                        <div class="section__form__span">    
-                                <input type="text" placeholder="Name">
-                                <input type="text" placeholder="Email">    
+                        <div class="section__form__span">
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Email">
                         </div>
                         <div class="section__form__textarea">
                             <textarea placeholder="Description" id="text" cols="45" rows="10"></textarea>
@@ -93,7 +96,7 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </section>
 
         <!-- Map -->
         <div class="map">
@@ -103,7 +106,7 @@
         </div>
 
         <!-- About -->
-        <div class="about">
+        <section class="about">
             <div class="about__realstate">
                 <h4 class="about--heading">About Realstate</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut
@@ -134,10 +137,11 @@
             <div class="about__newsletter">
                 <label class="about--heading" id="about__newsletter--h">NewsLetter</label>
                 <div class="about__newsletter__name">
-                    <input class = "about__newsletter__name"type="text" placeholder="Email"><button class="about__newsletter--btn"> Sign Up </button>
+                    <input class="about__newsletter__name" type="text" placeholder="Email"><button
+                        class="about__newsletter--btn"> Sign Up </button>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer -->

@@ -71,6 +71,7 @@ body{
 footer{
     margin-top: auto;
     width: 100%;
+    bottom: 0;
 }
 
 button{
@@ -81,7 +82,12 @@ button{
 
 /* Header */
 
-.header{
+.header{    
+    width: 100%;
+    
+}
+
+.header__content{
     display: flex;
     justify-content: flex-end;
     gap: 1rem;
