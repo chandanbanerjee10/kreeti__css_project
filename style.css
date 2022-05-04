@@ -14,7 +14,7 @@ a{
     color: #8c8c8c;
 }
 
-h1, h2, p{
+h1, h2, p,span{
     margin: 1.8rem 0;
 }
 
@@ -35,12 +35,12 @@ h3{
     font-size: 1.8rem;
 }
 
-h4{
+h4,label{
     font-weight: 400;
     font-size: 1.5rem;
 }
 
-p, button, input, textarea, b, li, section, article, address{
+p, button, input, textarea, b, li, section, article, address,span{
     font-weight: 400;
     font-size: 1.5rem;
     color: #8c8c8c;
@@ -63,12 +63,13 @@ html{
 
 body{
     font-family: "Poppins", sans-serif; 
-    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 footer{
     margin-top: auto;
-    bottom: 0;
     width: 100%;
 }
 
@@ -76,15 +77,6 @@ button{
     border-style: none;
     font-weight: 900;
 }
-
-.container{
-    max-width: 1600px;
-    margin: 0 auto;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
 
 
 /* Header */
@@ -96,6 +88,8 @@ button{
     padding-right: 1rem;
     align-items: center;
     height: 50px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .header--icon{
@@ -107,33 +101,49 @@ button{
 
 /* Navbar */
 
-.navbar{
+.navbar{   
+    box-shadow: 0 4px 6px -2px #8c8c8c;
+}
+
+.navbar__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
     height: 70px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-.navbar__list--icons{
+.navbar__container__list--icons{
     display: flex;
     justify-content: center;
     gap: 4rem;
 }
-.navbar__list--icons a:hover{
+.navbar__container__list--icons a:hover{
     color: rgb(11, 230, 11);
 }
 
-.nav-box-shadow{
+nav{
     width: 100%;
-    box-shadow: 0 4px 6px -2px #8c8c8c;
-    height: 120px;
+    
+    /* height: 120px; */
 }
 
 
 .navbar--icon{
     display: none;
 }
+
+
+/* Main */
+
+
+.main__container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 
 /* Contact Information */
 
@@ -149,7 +159,7 @@ button{
 }
 
 
-/* section */
+/* Section */
 
 .section{
     display: flex;
@@ -176,6 +186,11 @@ button{
     display: flex;
     gap: 1rem;
     align-items: center;
+    padding-bottom: 2.5rem;
+}
+
+.section__address__card:nth-of-type(1){
+    padding-bottom: 1.5rem;
 }
 
 .section__address--head{
@@ -233,7 +248,7 @@ iframe{
 
 /* About */
 
-.about p, .about b, .about h4{
+.about p, .about b, .about h4,label{
     color: rgb(63, 61, 61)
 }
 
@@ -254,7 +269,7 @@ iframe{
     min-width: 17rem;
     width: 30%;
 } 
-.about--heading{
+.about--heading,label{
     font-weight: 600;
 }
 .about__realstate p, .about__links--ul li, .about__info--ul li{
@@ -262,10 +277,15 @@ iframe{
 }
 
 .about__newsletter__name input{
-    width: 17rem;
+    width: 17rem;   
 }
-#about__newsletter--h, #about__links--h, #about__info--h{
+ #about__links--h, #about__info--h{
     padding-bottom: 1.5rem;
+}
+
+#about__newsletter--h{
+    display: block;
+    padding-bottom: 1.2rem;
 }
 
 
@@ -306,35 +326,28 @@ iframe{
 
     /* Navbar */
   
-    .navbar{
+    .navbar__container{
         flex-direction: column;
         position: relative;
         align-items: stretch;
         height: 45px;
     }
 
-    .navbar__img img{
+    .navbar__container__img img{
         width: 180px;
     }
 
-    .navbar__list{
+    .navbar__container__list{
         width: 100%;
     }
 
-    .navbar__list--icons{
+    .navbar__container__list--icons{
         display: none;
         background-color: rgb(58, 248, 10);
-        flex-direction: column;
         text-align: center;
-        justify-content: space-around;
-        gap: 1.5rem;
-        padding: 0.75rem 0;
         margin: 0 -2rem;
     }
 
-    .nav-box-shadow{
-        height: 100px;
-    }
     nav li{
         padding: 13px 0;
     }
@@ -382,7 +395,11 @@ iframe{
         flex-direction: column;
         gap: 0;
     }
-    .section__address__card p{
+
+    .section__address__card:nth-of-type(1){
+        padding-bottom: 0.5rem;
+    }
+    .section__address__card span{
         margin-bottom: 2.5rem;
         margin-top: 0.5rem;
     }
@@ -478,10 +495,9 @@ iframe{
     /* Navbar */
     .navbar{
         padding-right: 2rem;
-        align-items: center;
     }
 
-    .navbar__list--icons {
+    .navbar__container__list--icons {
         gap: 1.5rem;
     }
     /* Contact Info */
@@ -535,9 +551,9 @@ iframe{
 
 }
 
-@media only screen and (min-width: 800px){
+/* @media only screen and (min-width: 800px){
     
     .nav-box-shadow .container{
         text-align: center;
     }
-}
+} */
