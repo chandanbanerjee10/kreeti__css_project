@@ -48,9 +48,7 @@
 
         <section id="info" class="information">
             <h2 class="information--head">Contact Information</h2>
-            <p class="information--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet placeat
-                consectetur,
-                sapiente quod voluptates eius? Minus quis exercitationem distinctio dicta.</p>
+            <p class="information--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet placeatconsectetur,sapiente quod voluptates eius? Minus quis exercitationem distinctio dicta.</p>       
         </section>
 
         <!-- Section -->
@@ -59,24 +57,21 @@
         <section class="section" id="section_id">
             <div class="section__address">
                 <h3 class="section__address--head">Our Address</h3>
-                <p class="section__address--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-                    temporibus laudantium quidem
-                    repudiandae deleniti. Repudiandae Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p class="section__address--para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil temporibus laudantium quidem repudiandae deleniti. Repudiandae Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>         
                 <div class="section__address__card">
                     <img src="assets/17427.png" alt="location">
                     <span>198, lorem, ipsum has been industry's standard dummy</span>
                 </div>
                 <div class="section__address__card">
-                    <a href="tel:+919123456789"><img src="assets/17216.png" alt="call"></a>
+                    <img src="assets/17216.png" alt="call">
                     <a href="tel:+919123456789">+91 91234 56789</a>
                 </div>
                 <div class="section__address__card">
-                    <a href="mailto:test@test.com" target="_top"><img src="assets/21-512.png" alt="message"></a>
+                    <img src="assets/21-512.png" alt="message">
                     <a href="mailto:test@test.com" target="_top">test@test.com</a>
                 </div>
                 <div class="section__address__card">
-                    <a href="http://test.com" target="blank"><img
-                            src="assets/earth-global-globe-international-map-planet-world-2-12510.png" alt="globe"> </a>
+                    <img src="assets/earth-global-globe-international-map-planet-world-2-12510.png" alt="globe">
                     <a href="http://test.com" target="blank">http://test.com</a>
                 </div>
             </div>
@@ -109,10 +104,7 @@
         <section class="about">
             <div class="about__realstate">
                 <h4 class="about--heading">About Realstate</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut
-                    eius
-                    nemo
-                    voluptatum officiis reiciendis</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident impedit soluta nulla ut eius nemo voluptatum officiis reiciendis</p>                
             </div>
             <div class="about__links">
                 <h4 class="about--heading" id="about__links--h">Links</h4>
@@ -146,10 +138,10 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Copyright &copy; 2019 realestate. All rights reserved</p>
+        <span>Copyright &copy; 2019 realestate. All rights reserved</span>
     </footer>
 
-    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+   
     <script>
         var x = document.getElementById("btnn");
         var drop = document.getElementsByClassName("navbar__container__list--icons")[0];
@@ -163,6 +155,11 @@
             b = !b;
         }
         x.addEventListener("click", dropdown);
+        window.addEventListener('resize', function () { 
+            if (window.innerWidth > 500 && drop.style.display == "block" || window.innerWidth > 500 && drop.style.display == "none") {
+                window.location.reload();
+            }
+        });
 
     </script>
 </body>
