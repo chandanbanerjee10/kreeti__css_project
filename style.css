@@ -315,10 +315,10 @@ iframe{
 
 .footer{
     background-color: #999999;
-    padding: 0.5px 0;
+    padding: 10px;
     text-align: center;
 }
-.footer p{
+.footer span{
     color: white;
     margin: 10px;
 }
