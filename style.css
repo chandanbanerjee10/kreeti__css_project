@@ -490,6 +490,12 @@ iframe{
     #about__info--Desktop{
         display: none;
     }
+
+    /* Footer */
+
+    .footer{
+        margin-top: 1.5rem;
+    }
 } 
 
 /* For Tablet */
