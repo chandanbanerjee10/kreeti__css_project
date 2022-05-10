@@ -25,6 +25,8 @@
             <div class="navbar__container__img">
                 <img src="assets/logo.jpg" alt="Real Estate Logo">
             </div>
+            <label class="hamburger"for="toggle">&#9776;</label>
+            <input type="checkbox" id="toggle" />                   
             <div class="navbar__container__list">
                 <ul class="navbar__container__list--icons">
                     <li><a href="">Home</a></li>
@@ -34,9 +36,6 @@
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
-            <button id="btnn" class="navbar--icon">
-                <img id="hamburger" src="assets/bars-solid.svg" alt="hamburger icon">
-            </button>
         </div>
     </nav>
 
@@ -143,23 +142,23 @@
 
    
     <script>
-        var x = document.getElementById("btnn");
-        var drop = document.getElementsByClassName("navbar__container__list--icons")[0];
-        var b = true;
-        function dropdown() {
-            if (b) {
-                drop.style.display = "block";
-            } else {
-                drop.style.display = "none";
-            }
-            b = !b;
-        }
-        x.addEventListener("click", dropdown);
-        window.addEventListener('resize', function () { 
-            if (window.innerWidth > 500 && drop.style.display == "block" || window.innerWidth > 500 && drop.style.display == "none") {
-                window.location.reload();
-            }
-        });
+        // var x = document.getElementById("btnn");
+        // var drop = document.getElementsByClassName("navbar__container__list--icons")[0];
+        // var b = true;
+        // function dropdown() {
+        //     if (b) {
+        //         drop.style.display = "block";
+        //     } else {
+        //         drop.style.display = "none";
+        //     }
+        //     b = !b;
+        // }
+        // x.addEventListener("click", dropdown);
+        // window.addEventListener('resize', function () { 
+        //     if (window.innerWidth > 500 && drop.style.display == "block" || window.innerWidth > 500 && drop.style.display == "none") {
+        //         window.location.reload();
+        //     }
+        // });
 
     </script>
 </body>
