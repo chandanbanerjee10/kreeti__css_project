@@ -10,7 +10,7 @@
 a{
     text-decoration: none;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #2c2525;
 }
 
@@ -32,31 +32,25 @@ h2{
 
 h3{
     font-weight: 400;
-    font-size: 1.8rem;
-}
-
-h4,label{
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
-p, button, input, textarea, b, li, section, article, address,span{
-    font-weight: 400;
     font-size: 2rem;
+}
+
+
+p, li, section,span{
+    font-weight: 200;
+    font-size: 1.5rem;
     color: #1a1414;
 }
 
-address{
-    font-style: normal;
-}
+
 ul{
     list-style-type: none;  
 }
 
-img {
+ img {
     max-width:100%;
     height:auto;
-}
+} 
 
 html{
   height: 100%;
@@ -69,15 +63,25 @@ body{
     flex-direction: column;
 }
 
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 
 /* Header */
 .header{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
     margin: 1rem 0 1.5rem 0;
+    max-width: 1600px;
+    margin: 0 auto;
 }
-
+.header h2{
+    margin-top: 2.5rem;
+}
 
 /* Navbar */
 .navbar__container{
@@ -85,9 +89,17 @@ body{
     justify-content: center;
     gap: 3rem;
     margin-right: 2rem;
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
 }
 
+
 /* main */
+.main__container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
 
 /* info */
 
@@ -95,21 +107,25 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 20rem;
+    text-align: center;
+    padding: 2rem 15rem;
 }
 
 /* flowers */
+
 .flowers{   
     margin-top: 5rem;
 }
 .flower-item{
     height: 15rem;
-    width: 26rem;
+    width: auto;
+    /* object-fit: cover; */
 }
 
 .flower-set1{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .flower-set2{
@@ -124,4 +140,89 @@ body{
 }
 .info2 p{
     margin: 1.5rem 0;
+    font-size: 2.2rem;
+}
+
+/* About */
+
+.about{
+    background-color: black;
+    height: 15rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.about h3{
+    margin-bottom: 1rem;
+}
+.about p,h3{
+    color: white;
+}
+
+.about__items{
+    margin: 2rem 5rem;
+    width: 33%;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: black;
+    height: 5rem;
+    text-align: center;
+}
+
+.footer--hr{
+    color: white;
+    margin: 0 3rem;
+}
+
+.footer--p{
+    color: white;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 900px) and (min-width: 600px){
+    .info{
+        margin: 0 5rem;
+    }
+    .flower-set1{
+        flex-wrap: wrap;
+    }
+
+    .about{
+        height: 25rem;
+    }
+
+    .footer{
+        width: 100%;
+    }
+    footer{
+        margin-top: auto;
+        width: 100%;
+        bottom: 0;
+    }
+    .header, .navbar{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 599px){
+    .main__container{
+        max-width: 599px;
+    }
+    .about{
+        max-width: 599px;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 0;
+    }
+    .footer{
+        min-width: 100%;
+    }
 }
